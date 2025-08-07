@@ -1,0 +1,184 @@
+@keyframes groomFadeIn {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+        }
+        @keyframes groomSlideUp {
+          from { opacity: 0; transform: translateY(40px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        
+        .groom-fade-in {
+          animation: groomFadeIn 1s ease-out forwards;
+        }
+        .groom-slide-up {
+          animation: groomSlideUp 1s ease-out forwards;
+        }
+        .groom-delay-1 { animation-delay: 0.3s; }
+        .groom-delay-2 { animation-delay: 0.6s; }
+
+     
+@keyframes groomFadeIn {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+        }
+        @keyframes groomSlideUp {
+          from { opacity: 0; transform: translateY(40px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        
+        .groom-fade-in {
+          animation: groomFadeIn 1s ease-out forwards;
+        }
+        .groom-slide-up {
+          animation: groomSlideUp 1s ease-out forwards;
+        }
+        .groom-delay-1 { animation-delay: 0.3s; }
+        .groom-delay-2 { animation-delay: 0.6s; }
+        
+        @keyframes brideFadeIn {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+        }
+        @keyframes brideSlideUp {
+          from { opacity: 0; transform: translateY(40px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        
+        .bride-fade-in {
+          animation: brideFadeIn 1s ease-out forwards;
+        }
+        .bride-slide-up {
+          animation: brideSlideUp 1s ease-out forwards;
+        }
+        .bride-delay-1 { animation-delay: 0.3s; }
+        .bride-delay-2 { animation-delay: 0.6s; }
+        
+        .animate-on-scroll {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        
+@keyframes countdownZoom {
+          0% { opacity: 0; transform: scale(0.8); }
+          100% { opacity: 1; transform: scale(1); }
+        }
+        
+        .countdown-animate {
+          animation: countdownZoom 0.8s ease-out forwards;
+        }
+        
+        .countdown-delay-100 { animation-delay: 0.1s; }
+        .countdown-delay-200 { animation-delay: 0.2s; }
+        .countdown-delay-300 { animation-delay: 0.3s; }
+        .countdown-delay-400 { animation-delay: 0.4s; }
+        
+
+@keyframes fadeInUp {
+          0% { opacity: 0; transform: translateY(20px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-up {
+          animation: fadeInUp 1s ease-out forwards;
+        }
+        
+        /* Slide Up */
+        @keyframes slideUp {
+          0% { opacity: 0; transform: translateY(10px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-up {
+          animation: slideUp 0.6s ease-out forwards;
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        
+@keyframes wishFadeUp {
+          0% { opacity: 0; transform: translateY(20px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .wish-fade-up {
+          animation: wishFadeUp 1s ease-out forwards;
+        }
+        
+        /* Zoom In lembut */
+        @keyframes wishZoomIn {
+          0% { opacity: 0; transform: scale(0.95); }
+          100% { opacity: 1; transform: scale(1); }
+        }
+        .wish-zoom-in {
+          animation: wishZoomIn 0.8s ease-out forwards;
+        }
+
+@keyframes giftFadeUp {
+          0% {
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+        
+        .gift-animate {
+          opacity: 0;
+          animation: giftFadeUp 0.8s ease-out forwards;
+        }
+        
+        .gift-delay-1 {
+          animation-delay: 0.3s;
+        }
+        .gift-delay-2 {
+          animation-delay: 0.6s;
+        }
+        .gift-delay-3 {
+          animation-delay: 0.9s;
+        }
+        .gift-delay-4 {
+          animation-delay: 1.2s;
+        }
+
+        #lightboxImg {
+          animation: zoomIn 0.3s ease-out;
+        }
+        @keyframes zoomIn {
+          from { transform: scale(0.8); opacity: 0; }
+          to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fall {
+          0% {
+            transform: translateY(-10vh) rotate(0deg);
+            opacity: 0;
+          }
+          20% { opacity: 1; }
+          100% {
+            transform: translateY(120vh) rotate(360deg);
+            opacity: 0;
+          }
+        }
+        .animate-fall {
+          animation: fall 8s linear infinite;
+        }
+        .animate-fall:nth-child(1) { animation-delay: 0s; }
+        .animate-fall:nth-child(2) { animation-delay: 2s; }
+        .animate-fall:nth-child(3) { animation-delay: 4s; }
+        .animate-fall:nth-child(4) { animation-delay: 6s; }
+        .animate-fall:nth-child(5) { animation-delay: 1s; }
+
+        @keyframes lovestoryslideup {
+          0% { opacity: 0; transform: translateY(30px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .lovestory-slide-up {
+          animation: lovestoryslideup 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-700 { animation-delay: 0.7s; }
