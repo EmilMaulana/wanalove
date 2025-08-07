@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Wedding</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -10,68 +10,55 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Satisfy&display=swap" rel="stylesheet">
   <style>
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
+    @keyframes weddingFadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+    .fade-up {
+      opacity: 0;
+      animation: weddingFadeUp 1s ease-out forwards;
+    }
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+    .delay-4 { animation-delay: 1.2s; }
+    .delay-5 { animation-delay: 1.5s; }
   </style>
 </head>
 <body style="font-family: 'Poppins', sans-serif;"
-      class="bg-[url('../images/first-meet.jpg')] bg-cover bg-center bg-fixed">
-
-  <header class="relative bg-cover bg-center h-72 text-white" style="background-image: url('../images/wedding-couples.jpg');">
+      class="bg-[url('../images/details/first-meet.webp')] bg-cover bg-center bg-fixed">
+  <header class="relative bg-cover bg-center h-72 text-white" style="background-image: url('../images/background/wedding-picture.webp');">
     <div class="absolute inset-0 bg-black/50"></div>
-    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center fade-in-up">
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center fade-up delay-1">
       <h1 class="text-4xl font-bold">The Wedding 💍</h1>
       <p class="text-lg mt-2">Hari ketika dua hati menjadi satu</p>
     </div>
   </header>
-
-  <main class="max-w-4xl mx-auto px-6 py-12 space-y-10 text-gray-800 fade-in-up bg-white/40 backdrop-blur-md rounded-lg shadow-lg mt-8">
-    
-    <div class="flex justify-center">
-      <img src="../images/wedding-picture.jpg" alt="Hari Pernikahan" class="rounded-lg shadow-lg w-full md:w-2/3">
+  <main class="max-w-4xl mx-auto px-6 py-12 space-y-10 text-gray-800 bg-white/40 backdrop-blur-md rounded-lg shadow-lg mt-8">
+    <div class="flex justify-center fade-up delay-2">
+      <img src="../images/details/fourth-meet.webp" alt="Hari Pernikahan" class="rounded-lg shadow-lg w-full md:w-2/3">
     </div>
-
-    <div class="flex items-center justify-center gap-4">
+    <div class="flex items-center justify-center gap-4 fade-up delay-3">
       <span class="h-px bg-gray-300 flex-1"></span>
       <i class="fas fa-church text-pink-500 text-xl"></i>
       <span class="h-px bg-gray-300 flex-1"></span>
     </div>
-
-    <div class="space-y-6 text-justify">
-      <p>
-        Hari yang kami tunggu akhirnya tiba. Suasana penuh cinta dan kebahagiaan terasa sejak pagi hari,  
-        ketika keluarga, sahabat, dan orang-orang tercinta berkumpul untuk menyaksikan janji suci kami.
-      </p>
-      <p>
-        Setiap senyum, setiap doa, dan setiap pelukan menjadi bagian tak terlupakan dari momen ini.  
-        Gaun putih, setelan rapi, dan kilau cincin hanyalah simbol — yang terpenting adalah hati kami  
-        yang kini bersatu selamanya.
-      </p>
-      <p>
-        Pernikahan ini bukanlah akhir dari perjalanan, melainkan awal dari bab baru yang akan kami tulis  
-        bersama, penuh cinta, tawa, dan impian yang ingin kami wujudkan.
-      </p>
+    <div class="bg-white/60 backdrop-blur-md p-6 rounded-lg shadow space-y-6 text-justify fade-up delay-3">
+      <p>Hari yang kami tunggu akhirnya tiba. Suasana penuh cinta dan kebahagiaan terasa sejak pagi hari, ketika keluarga, sahabat, dan orang-orang tercinta berkumpul untuk menyaksikan janji suci kami.</p>
+      <p>Setiap senyum, setiap doa, dan setiap pelukan menjadi bagian tak terlupakan dari momen ini. Gaun putih, setelan rapi, dan kilau cincin hanyalah simbol — yang terpenting adalah hati kami yang kini bersatu selamanya.</p>
+      <p>Pernikahan ini bukanlah akhir dari perjalanan, melainkan awal dari bab baru yang akan kami tulis bersama, penuh cinta, tawa, dan impian yang ingin kami wujudkan.</p>
     </div>
-
-    <div class="bg-white/60 backdrop-blur-md p-6 rounded-lg shadow text-center text-gray-700">
-      "Pernikahan adalah janji untuk mencintai, menghargai, dan menjaga, bukan hanya di hari yang indah,  
-      tapi juga di setiap badai yang datang."
+    <div class="bg-white/60 backdrop-blur-md p-6 rounded-lg shadow text-center text-gray-700 italic fade-up delay-4">
+      "Pernikahan adalah janji untuk mencintai, menghargai, dan menjaga, bukan hanya di hari yang indah, tapi juga di setiap badai yang datang."
     </div>
-
-    <div class="flex justify-center">
-      <a href="../index.html#love-story" class="bg-[#6B7A41] text-white px-5 py-2 rounded shadow hover:bg-[#5c6939] transition">
-        <i class="fas fa-arrow-left mr-2"></i> Kembali
+    <div class="flex justify-center fade-up delay-5">
+      <a href="../index.html#love-story" class="bg-[#6B7A41] text-white px-5 py-2 rounded shadow hover:bg-[#5c6939] transition flex items-center gap-2">
+        <i class="fas fa-arrow-left"></i> Kembali
       </a>
     </div>
-
-</main>
-
-<footer class="bg-white/30 backdrop-blur-md text-center py-6 mt-12 rounded-t-lg shadow-lg">
+  </main>
+  <footer class="bg-white/60 backdrop-blur-md text-center py-6 mt-12 rounded-t-lg shadow-lg fade-up delay-5">
     <p>"Setiap kisah cinta itu indah, tapi kisah kita adalah favoritku."</p>
   </footer>
-
 </body>
 </html>
