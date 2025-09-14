@@ -25,8 +25,6 @@ class Login extends Component
 
         if (isset($data['token'])) {
             Session::put('auth_token', $data['token']);
-
-            // Ubah redirect ke index.blade.php
             return redirect()->route('home'); 
         } else {
             $this->errorMessage = $data['message'] ?? 'Login gagal';
@@ -36,6 +34,6 @@ class Login extends Component
     public function render()
     {
         return view('livewire.auth.login')
-            ->layout('layouts.app'); // tetap pakai layout app
+            ->layout('layouts.app'); 
     }
 }
