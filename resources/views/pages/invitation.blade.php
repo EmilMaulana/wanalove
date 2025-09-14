@@ -1,0 +1,15 @@
+@extends('layouts.app')
+
+@section('content')
+  @include('partials.header')
+  @include('partials.groom')
+  @include('partials.bride')
+  @include('partials.love-story')
+  @include('partials.countdown')
+  @include('partials.rsvp')
+  @include('partials.wish')
+  @include('partials.gift')
+  @include('partials.gallery')
+  @include('partials.footer')
+  @include('partials.fab')
+@endsection
